@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .join-clan {
+            width: 100%;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .join-clan button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        #coin-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        #coin {
+            width: 350px;
+            height: 350px;
+            cursor: pointer;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        #score {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .section-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .section {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="join-clan">
+            <button>Join Clan</button>
+        </div>
+        <div id="coin-container">
+            <div id="score">0</div>
+            <img id="coin" src="coin.png" alt="Coin">
+        </div>
+        <div class="section-container">
+            <button class="section" id="earn">Earn</button>
+            <button class="section" id="friends">Friends</button>
+            <button class="section" id="boosts">Boosts</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
